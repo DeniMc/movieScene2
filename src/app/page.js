@@ -1,5 +1,6 @@
 import Results from "@/components/Results";
-
+import SearchBox from "@/components/SearchBox";
+import { Suspense } from "react";
 
 
 const API_KEY = process.env.API_KEY;
@@ -20,9 +21,14 @@ const results = data.results;
 
   
    return (
-     <div>
+       <div className="bg-[var(--accent-medium)] text-[var(--primary-dark)]">
+      {/* ✅ Suspense for client-side search */}
+      <Suspense fallback={null}>
+        <SearchBox />
+      </Suspense>
+
       <Results results={results} />
-     </div>
+    </div>
     )
  }
  
