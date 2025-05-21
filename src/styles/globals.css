@@ -1,0 +1,55 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Default (Light) Theme */
+:root {
+  --background:  #6b7280; /* white */
+  --background-secondary: #f9fafb; /* gray.50 */
+
+  --primary-dark: #111827; /* gray.900 */
+  --primary-medium: #374151; /* gray.700 */
+  --primary-light: #6b7280; /* gray.500 */
+}
+
+/* Dark Theme */
+[data-theme='dark'] {
+  --background: #000000; /* black */
+  --background-secondary: #1f2937; /* gray.800 */
+
+  --accent-dark: #701a75; /* fuchsia.900 */
+  --accent-medium: #a21caf; /* fuchsia.700 */
+  --accent-light: #d946ef; /* fuchsia.500 */
+
+  --primary-dark: #d1d5db; /* gray.300 */
+  --primary-medium: #e5e7eb; /* gray.200 */
+  --primary-light: #f3f4f6; /* gray.100 */
+}
+
+/* Emerald Theme */
+[data-theme='emerald'] {
+  --background:#047857; /* white */
+  --background-secondary: #10b981; /* emerald.50 — optional */
+
+  --accent-dark: #064e3b; /* emerald.900 */
+  --accent-medium: #047857; /* emerald.700 */
+  --accent-light: #10b981; /* emerald.500 */
+
+  --primary-dark: #111827; /* gray.900 */
+  --primary-medium: #374151; /* gray.700 */
+  --primary-light: #6b7280; /* gray.500 */
+}
+
+/* Pink Theme */
+[data-theme='pink'] {
+  --background: #831843; /* gray.900 */
+  --background-secondary: #ec4899; /* gray.800 */
+
+  --accent-dark: #831843; /* pink.900 */
+  --accent-medium: #be185d; /* pink.700 */
+  --accent-light: #ec4899; /* pink.500 */
+
+  --primary-dark: #d1d5db; /* gray.300 */
+  --primary-medium: #e5e7eb; /* gray.200 */
+  --primary-light: #f3f4f6; /* gray.100 */
+}

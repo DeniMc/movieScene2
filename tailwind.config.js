@@ -1,19 +1,27 @@
-/** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors');
 module.exports = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./public/index.html",
+    './styles/globals.css',
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        emerald: colors.emerald,
+        fuchsia: colors.fuchsia,
+        'th-background': 'var(--background)',
+        'th-background-secondary': 'var(--background-secondary)',
+        'th-foreground': 'var(--foreground)',
+        'th-primary-dark': 'var(--primary-dark)',
+        'th-primary-medium': 'var(--primary-medium)',
+        'th-primary-light': 'var(--primary-light)',
+        'th-accent-dark': 'var(--accent-dark)',
+        'th-accent-medium': 'var(--accent-medium)',
+        'th-accent-light': 'var(--accent-light)',
       },
     },
   },
+  variants: {},
   plugins: [],
-  darkMode: 'class',
 };
